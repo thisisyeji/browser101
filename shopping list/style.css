@@ -40,7 +40,8 @@ main {
   background-color: rgb(240, 248, 255, 0.6);
   text-align: start;
   padding: 20px;
-  overflow-x: hidden; / overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
@@ -99,15 +100,27 @@ main {
   background-color: transparent;
   cursor: pointer;
   color: white;
+  transition: transform 300ms ease-in;
+}
+
+#list_form button:hover {
+  transform: scale(1.2);
 }
 
 .delete_btn {
   text-decoration: none;
   outline: none;
-  background-color: rgb(252, 221, 218);
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgb(252, 221, 218);
   color: #0c82b1;
   padding: 0 10px;
   cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.delete_btn:hover {
+  transform: scale(1.1);
+  background-color: pink;
 }
