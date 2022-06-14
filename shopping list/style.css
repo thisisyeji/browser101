@@ -20,14 +20,18 @@ main {
   border-radius: 20px;
   text-align: center;
   background-color: rgb(240, 248, 255, 0.4);
-  font-family: 'Permanent Marker', cursive; 
+  font-family: 'Permanent Marker', cursive, 'Yeon Sung', cursive;
   box-shadow: 0 1em 1em hsla(0, 1%, 60%, 0.341);
 }
 
 .title {
-  height: 150px;
+  padding: 10px;
   border-bottom: 1px solid aliceblue;
   color: #064f6c;
+}
+
+.title h1 {
+  margin: 10px 0;
 }
 
 
@@ -39,18 +43,29 @@ main {
   overflow-x: hidden; / overflow-y: auto;
 }
 
+
 .list_item {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   font-size: 1.5rem;
-  color: #064f6c;
+  color: #0c82b1;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .list_done {
   text-decoration-line: line-through;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .checkbox {
   margin-right: 10px;
+}
+
+.line_through {
+  text-decoration: line-through;
 }
 
 #list_form {
@@ -65,9 +80,8 @@ main {
   border-radius: 20px;
   padding: 10px;
   background-color: rgb(255, 255, 255, 0.5);
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', cursive, 'Yeon Sung', cursive;
   font-size: 1.2rem;
-  color: ;
   text-align: center;
 }
 
@@ -85,4 +99,15 @@ main {
   background-color: transparent;
   cursor: pointer;
   color: white;
+}
+
+.delete_btn {
+  text-decoration: none;
+  outline: none;
+  background-color: rgb(252, 221, 218);
+  border: none;
+  border-radius: 5px;
+  color: #0c82b1;
+  padding: 0 10px;
+  cursor: pointer;
 }
