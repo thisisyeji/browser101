@@ -2,12 +2,23 @@ const listForm = document.querySelector("#list_form");
 const list = document.querySelector("#list");
 const inputText = document.querySelector("#input_text");
 const title = document.querySelector(".title");
+const clock = document.querySelector(".clock");
 
-const date = new Date();
-const today = `
-${date.getFullYear()}. ${date.getMonth()}. ${date.getDate()} 
-`; 
-title.append(today);
+function getClock() {
+  const date = new Date();
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
+
+  clock.innerHTML = `
+  ${date.getFullYear()}. ${date.getMonth()}. ${date.getDate()} </br>
+  ${hours} : ${minutes} : ${seconds}
+  `; 
+};
+
+getClock();
+setInterval(getClock, 1000);
+
 
 function onAdd() {
   const li = document.createElement("li")

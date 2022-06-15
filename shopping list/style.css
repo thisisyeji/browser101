@@ -34,6 +34,14 @@ main {
   margin: 10px 0;
 }
 
+.clock {
+  text-align: end;
+  margin: 10px 20px;
+  color: rgb(246, 246, 246);
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 2px #064F6C;
+}
+
 
 #list {
   height: 400px;
